@@ -19,16 +19,28 @@ a:hover {
     text-decoration: underline;
 }
 
+.bold {
+    font-weight: 700;
+}
+
+ul li {
+    list-style: none;
+}
+
 /* Main Css */
 
 #page .container {
-    width: 80%;
+    width: 58%;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
 }
 
-#page #container::after {
-    content: "";
-    clear: both;
-    display: table;
+#left-container {
+    margin: 55px auto;
+}
+
+#right-container {
+    margin: 20px auto;
 }
