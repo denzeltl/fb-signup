@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EDF0F5;
+}
+
+#page {
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+a {
+    color: #365CB2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Main Css */
+
+#page .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#page #container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
