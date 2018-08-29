@@ -18,9 +18,15 @@
                     <h2>Connect with friends and the world around you on Facebook.</h2>
                 </div>
                 <ul id="levels">
-                    <li class="level-item"><img src="images/paper.png" alt=""><span class="bold">See photos and updates</span> from friends in News Feed.</li>
-                    <li class="level-item"><img src="images/comp.png" alt=""><span class="bold">Share what's new</span> in your life on your Timeline.</li>
-                    <li class="level-item"><img src="images/social.png" alt=""><span class="bold">Find more</span> of what you're looking for with Facebook Search.</li>
+                    <li class="level-item">
+                        <div><img src="images/paper.png" alt=""></div>
+                        <span class="bold">See photos and updates</span> from friends in News Feed.</li>
+                    <li class="level-item">
+                        <div><img src="images/comp.png" alt=""></div>
+                        <span class="bold">Share what's new</span> in your life on your Timeline.</li>
+                    <li class="level-item">
+                        <div><img src="images/social.png" alt=""></div>
+                        <span class="bold">Find more</span> of what you're looking for with Facebook Search.</li>
                 </ul>
             </div>
             <div id="right-container">
@@ -35,10 +41,10 @@
                         <input type="email" id="email" placeholder="Email address"  name="email" required>
                         <input type="number" id="mnumber" placeholder="Mobile number"   name="mnumber" maxlength="11" required>
                         <input type="password" id="pword" name="password" placeholder="New  password" required>
-                        <input type="submit" value="Sign Up" id="submit">
                     </form>
                     <div class="birthdate">
                         <p id="birthday">Birthday</p>
+                        <div id="select">
                         <select name="month" id="month">
                             <option value="month" selected>Month</option>
                             <option value="month">January</option>
@@ -120,6 +126,7 @@
                             <option value="month">1991</option>
                             <option value="month">1990</option>
                         </select>
+                        </div>
                         <p id="why-provide">
                             Why do I need to provide my birthday?
                         </p>
@@ -137,6 +144,7 @@
                     </p>
                 </div>
                 <input type="button" value="Sign Up">
+                <hr />
                 <div class="footer">
                     <p><a href="https://www.facebook.com/pages/creation/?ref_type=registration_form">Create a Page</a> for a celebrity, band or busines.</p>
                 </div>

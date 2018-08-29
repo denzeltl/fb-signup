@@ -4,7 +4,7 @@ My take on freeCodeCamp's [Responsive Web Design Projects - Build a Survey Form]
 
 View [here](https://denzeltl.github.io/fb-signup/)
 
-**Completed on:** *08/xx/2018*
+**Completed on:** *08/29/2018*
 
 ___
 

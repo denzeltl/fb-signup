@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #EDF0F5;
+    color: #333333;
 }
 
 #page {
@@ -27,20 +28,200 @@ ul li {
     list-style: none;
 }
 
+
 /* Main Css */
 
 #page .container {
-    width: 58%;
+    width: 55rem;
     margin: 0 auto;
     display: grid;
+    grid-template-areas: "left right";
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
 }
 
 #left-container {
     margin: 55px auto;
+    grid-area: left;
 }
 
 #right-container {
     margin: 20px auto;
+    grid-area: right;
+}
+
+
+/* Left Container */
+
+#left-container h2 {
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+#left-container ul {
+    padding: 0;
+}
+
+#levels img {
+    width: 50px;
+    padding-right: 15px;
+}
+
+li {
+    margin-top: 40px;
+    height: 30px;
+    font-size: 0.8em;
+}
+
+li span {
+    font-size: 1.1em;
+}
+
+li > div {
+    display: inline-block;
+    float: left;
+    left: 0;
+}
+
+
+/* Right Container */
+
+h1 {
+    margin-bottom: 9px;
+}
+
+p {
+    margin: 0 0 15px 0;
+}
+
+input {
+    height: 30px;
+    padding: 0 0 0 5px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+            "fname lname"
+            "email email"
+            "mobile mobile"
+            "pword pword";
+    margin-bottom: 20px;
+}
+
+#name {
+    grid-area: fname;
+}
+
+#last-name {
+    grid-area: lname;
+}
+
+#email {
+    grid-area: email;
+}
+
+#mnumber {
+    grid-area: mobile;
+}
+
+#pword {
+    grid-area: pword;
+}
+
+#birthday {
+    margin-bottom: 3px;
+}
+
+select {
+    padding: 5px;
+    background-color: rgb(216, 213, 210);
+    font-size: 0.7rem;
+}
+
+#select {
+    float: left;
+    margin-right: 10px;
+}
+
+#month {
+    width: 65px;
+}
+
+#day {
+    width: 55px;
+}
+
+#year {
+    width: 55px;
+}
+
+#why-provide {
+    color: #365CB2;
+    font-size: 0.6rem;
+    margin-bottom: 20px;
+}
+
+#gender input {
+    height: 13px;
+    margin-left: 10px;
+}
+
+#tac {
+    line-height: 1rem;
+    width: 80%;
+    font-size: 0.6rem;
+    margin-top: 15px;
+}
+
+
+/* Footer */
+
+input[type="button"] {
+    background-color: #69A354;
+    width: 50%;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 3px;
+    padding: 10px 0 10px 0;
+    height: 2rem;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(121, 182, 98);
+}
+
+hr {
+    color: #e7e7e7;
+    margin: 10px 0;
+}
+
+.footer {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+/* Media  */
+
+@media screen and (max-width: 55rem) {
+    #page .container {
+        width: 30rem;
+        display: grid;
+        grid-template-areas: 
+            "left"
+            "right";
+        margin: 0 auto;
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+    }
+
+    #left-container,
+    #right-container {
+        margin: 0;
+    }
 }
